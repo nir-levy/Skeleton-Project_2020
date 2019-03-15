@@ -26,6 +26,5 @@ Don’t forget to use the MVVM pattern: https://docs.microsoft.com/en-us/xamarin
 
 ## **BONUS**
 * Achieve the two counters (and buttons) using a list of models in your view model and a [DataTemplate](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/templates/data-templates/creating).
-* Use [Styles](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/xaml/index) to avoid rewriting your style on each element.
 
 ![screen shot](./ScreenShot.PNG)
