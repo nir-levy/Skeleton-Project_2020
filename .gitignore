@@ -2,4 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/01 Mobile App/Basic/.vs/CounterApp/v15
+/**/.vs
+/**/obj
+/**/bin
+/**/*.sln.DotSettings.user
