@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CounterApp"
+             x:Class="CounterApp.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:MainViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Label Text="Counter App" HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold" Margin="20"/>
+
+        <ListView ItemsSource="{Binding Counters}" SeparatorColor="Transparent">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="5">
+                            <Label Text="{Binding Id, StringFormat='Counter {0}: '}" FontSize="Medium" TextColor="DarkGray" VerticalOptions="Center"/>
+                            <Label Text="{Binding Counter}" FontSize="Medium" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="50" HorizontalTextAlignment="Center"/>
+                            <Button Text="Increment" BackgroundColor="Blue" TextColor="White" Command="{Binding IncrementCounterCommand}" VerticalOptions="Center" Padding="0"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
+</ContentPage>
