@@ -88,18 +88,12 @@ namespace CounterFunctions
             if (cloudCounter == null)
             {
                 cloudCounter = new Counter { Id = counterId };
-                try
-                {
-                    TableOperation insertOperation = TableOperation.InsertOrReplace(cloudCounter);
-                    cloudCounter.PartitionKey = "counter";
-                    cloudCounter.RowKey = cloudCounter.Id.ToString();
-                    TableResult tableResult = await cloudTable.ExecuteAsync(insertOperation);
-                    return await GetOrCreateCounter(cloudTable, counterId);
-                }
-                catch (Exception ex)
-                {
-                    throw;
-                }
+
+                TableOperation insertOperation = TableOperation.InsertOrReplace(cloudCounter);
+                cloudCounter.PartitionKey = "counter";
+                cloudCounter.RowKey = cloudCounter.Id.ToString();
+                TableResult tableResult = await cloudTable.ExecuteAsync(insertOperation);
+                return await GetOrCreateCounter(cloudTable, counterId);
             }
 
             return cloudCounter;
