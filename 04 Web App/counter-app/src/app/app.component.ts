@@ -55,7 +55,6 @@ export class AppComponent {
   }
 
   public increaseCounter(): void {
-    console.log("HERE!");
     const body = { Id: this.counterId, Count: this.counter };
 
     this.http
