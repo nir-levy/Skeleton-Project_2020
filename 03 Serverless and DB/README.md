@@ -52,7 +52,7 @@ When messages come in, update the counter property with the new value.
 https://docs.microsoft.com/en-us/aspnet/core/signalr/dotnet-client?view=aspnetcore-2.2
 
 Also, Call the GetCounter upon startup to receive the initial value of the counter.
-When the button is pressed, don’t update the counter property, but only call the function UpdateCounter.
+When the button is pressed, *don’t update the counter property, but only call the function UpdateCounter*.
 
 ## Test everything
 Open your mobile app. Make sure you don’t see 0 as the initial value. 

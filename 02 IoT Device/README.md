@@ -12,8 +12,7 @@ https://github.com/Azure/azure-iot-arduino
 
 ## Device logic
 Attach a button to your IoT device. The device should send a message to the IoT Hub every time the user is pressing the button.
-You can find a sample of a working button loop in this GitHub repo: https://github.com/flaviomauro/adafruit-feather-huzzah-led-button
-(Thanks Arthur for finding the new link)
+You can find a sample of a working button loop in this GitHub repo: https://github.com/flaviomauro/adafruit-feather-huzzah-led-button.
 
 Combine the Arduino SDK and the code above to send a message to the IoT Hub each time the button is pressed.
 

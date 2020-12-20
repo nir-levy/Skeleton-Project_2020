@@ -12,6 +12,8 @@ https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-query-language#c
 You can read on how to send these type of messages using C# here:
 https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-csharp-csharp-c2d#send-a-cloud-to-device-message
 
+(SG: No explanation here why 2 buttons?)
+
 Your web page should look something like this:
 ![screen shot](./ScreenShot.png)
 
